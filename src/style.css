@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'nyght';
+    src: url(fonts/NyghtSerif-Medium.woff) format('woff'),
+         url(fonts/NyghtSerif-Medium.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nyght';
+    src: url(fonts/NyghtSerif-RegularItalic.woff) format('woff'),
+         url(fonts/NyghtSerif-RegularItalic.woff2) format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 5fr;    
+}
+header{
+    padding: 5vh;
+    
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2vw;
+}
+
+
+#content{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    align-items: center;
+}
+
+p{
+    text-align: center;
+    font-family: 'nyght';    
+    font-size: 50px;
+}
+
+img{
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
