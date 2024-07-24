@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @font-face {
     font-family: 'nyght';
     src: url(fonts/NyghtSerif-Medium.woff) format('woff'),
@@ -20,16 +22,36 @@ body{
     display: grid;
     grid-template-rows: 1fr 5fr;    
 }
+
 header{
-    padding: 5vh;
-    
-}
-nav{
-    display: flex;
-    justify-content: flex-end;
-    gap: 2vw;
+    /* padding: 5vh; */
+    position: sticky;
+    top: 0;
+    background-color: white;  
 }
 
+nav{
+    /* margin: 5vh; */
+    height: 15vh;
+    margin-right: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5vw;
+    
+}
+
+button{
+    background: none;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.22s ease-in-out;
+}
+
+button:hover{
+    opacity: .3;
+}
 
 #content{
     display: grid;
@@ -43,6 +65,8 @@ p{
     font-size: 50px;
 }
 
+/* home page styling */
+
 img{
     grid-row: 2;
     width: 100%;
@@ -50,5 +74,12 @@ img{
     object-fit: cover;
 
 }
+
+/* menu page styling */
+#menu{
+    display: grid;
+}
+
+
 
 
