@@ -3,6 +3,7 @@ export default function loadHome(){
     const content = document.querySelector('#content');
 
     let title = document.createElement('p');
+    title.id='title';
     title.textContent = 'La Forchetta';
     content.appendChild(title);
 
