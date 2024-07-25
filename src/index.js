@@ -1,4 +1,5 @@
 import loadHome from "./home.js";
+import dombuilder from "./menu.js";
 
 
 
@@ -12,7 +13,7 @@ const loader = (function(){
 
 
     function clear(content){
-        content.innerHTML = ""
+        content.innerHTML = "";
     };
 
     const start = ()=>{
@@ -24,6 +25,7 @@ const loader = (function(){
             console.log('pizza');
 
             clear(content);
+            dombuilder();
             // loadHome();
         })
         about.addEventListener('click',()=>{
