@@ -112,7 +112,7 @@ span>button{
 .item{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    row-gap: 20px;
+    row-gap: 10px;
     font-family: "Poppins", sans-serif;
     padding: 30px;
     border-radius: 25px;
@@ -136,12 +136,15 @@ span>button{
 .item p:nth-child(1){
     font-weight: 500;
     font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
     
 }
 
-.item p:nth-child(2){
+.item p:nth-child(2),p:nth-child(3){
     text-align: justify;
     font-size: smaller;
+    margin-bottom: 10px;
 }
 
 
