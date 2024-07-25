@@ -24,14 +24,12 @@ body{
 }
 
 header{
-    /* padding: 5vh; */
     position: sticky;
     top: 0;
     background-color: white;  
 }
 
 nav{
-    /* margin: 5vh; */
     height: 15vh;
     margin-right: 5vh;
     display: flex;
@@ -46,7 +44,6 @@ button{
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     font-weight: 400;
-    /* color:#b7cab6; */
     transition: 0.22s ease-in-out;
 }
 
@@ -125,7 +122,6 @@ span>button{
 }
 
 .item p:not(:nth-child(1)){
-    /* justify-self: center; */
     align-self: center;
 }
 
@@ -144,6 +140,18 @@ span>button{
 
 
 /* about page styling */
+#about{
+    font-family: "Poppins", sans-serif;
+    text-align: justify;
+    margin: 0px 30vh;
+    position: absolute;
+    top:50%;
+    border-radius: 20px;
+    font-size: 18px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+}
 
 
 

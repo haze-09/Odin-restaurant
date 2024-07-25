@@ -1,5 +1,6 @@
 import loadHome from "./home.js";
 import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
 
 
 
@@ -28,10 +29,10 @@ const loader = (function(){
             loadMenu();
         })
         about.addEventListener('click',()=>{
-            console.log('pizza');
+            console.log('pizza');           
 
             clear(content);
-            // loadHome();
+            loadAbout();
         })
 
 
