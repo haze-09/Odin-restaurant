@@ -87,8 +87,8 @@ span>button{
     background: #cce5ca;
     border-radius: 25px;
     font-weight: 500;
+    width: 150px;
     padding: 5px 20px;
-    box-shadow: 0px 3px 0px 0px rgba(72, 72, 72, 0.5);
 }
 
 #menu{    
@@ -103,14 +103,8 @@ span>button{
     border-radius: 25px;
     background-image: url('images/webpack photu blur.png');
     background-size: cover;
-    background-position: center;
-    
-
+    background-position: center;   
 }
-
-
-
-
 
 .item{
     display: grid;
@@ -139,8 +133,7 @@ span>button{
     font-weight: 500;
     font-size: 20px;
     padding-bottom: 10px;
-    border-bottom: 1px solid;
-    
+    border-bottom: 1px solid;    
 }
 
 .item p:nth-child(2),p:nth-child(3){
@@ -148,6 +141,9 @@ span>button{
     font-size: smaller;
     margin-bottom: 10px;
 }
+
+
+/* about page styling */
 
 
 

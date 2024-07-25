@@ -27,7 +27,7 @@ const menuArrays = (() =>{
                 beverages.push(menuItem(name,desc,price1));
                 break;
 
-            case 'deserts':
+            case 'desserts':
                 deserts.push(menuItem(name,desc,price1))
                 break;
         
@@ -170,14 +170,58 @@ export default function dombuilder(){
         })
     }
 
+    function itemAdder(item){
+        let name = document.createElement('p');
+            let desc = document.createElement('p');
+            let price = document.createElement('p');
+            let rupees = document.createElement('p');
+    
+            let itemDiv = document.createElement('div');
+            itemDiv.classList.add('item');
+            
+    
+            name.textContent = item.name;
+            desc.textContent = item.desc;
+            price.textContent = 'Price';
+            rupees.textContent = '₹' + item.price;
+    
+            itemDiv.appendChild(name);
+            itemDiv.appendChild(desc);
+            itemDiv.appendChild(price);
+            itemDiv.appendChild(rupees);
+    
+            menu.appendChild(itemDiv);   
+    }
+
     pizzaAdder();
+
+    // event listeners
 
     pizzaButton.addEventListener('click',()=>{
         menu.innerHTML = "";
         pizzaAdder();
-
     })
-    
+
+    pastaButton.addEventListener('click',()=>{
+        menu.innerHTML = "";
+        pasta.forEach((item)=>{
+            itemAdder(item);            
+        })
+    })
+
+    beveragesButton.addEventListener('click',()=>{
+        menu.innerHTML = "";
+        beverages.forEach((item)=>{
+            itemAdder(item);
+        })
+    })
+
+    dessertsButton.addEventListener('click',()=>{
+        menu.innerHTML = "";
+        desserts.forEach((item)=>{
+            itemAdder(item);
+        })
+    })   
 
 };
 
