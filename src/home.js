@@ -1,3 +1,4 @@
+import greenImage from './images/webpack photu green.png';
 
 export default function loadHome(){
     const content = document.querySelector('#content');
@@ -8,7 +9,7 @@ export default function loadHome(){
     content.appendChild(title);
 
     let image = new Image();
-    image.src = "images/webpack photu green.png";
+    image.src = greenImage;
     content.appendChild(image);
 };
 

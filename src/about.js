@@ -1,3 +1,5 @@
+import blurImage from './images/webpack photu blur.png';
+
 export default function loadAbout(){
     const content = document.querySelector('#content');
 
@@ -7,7 +9,7 @@ export default function loadAbout(){
     content.appendChild(title);
 
     let image = new Image();
-    image.src = "images/webpack photu blur.png";
+    image.src = blurImage;
     content.appendChild(image);
 
     let about = document.createElement('p');

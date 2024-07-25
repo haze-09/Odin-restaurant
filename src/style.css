@@ -8,14 +8,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'nyght';
-    src: url(fonts/NyghtSerif-RegularItalic.woff) format('woff'),
-         url(fonts/NyghtSerif-RegularItalic.woff2) format('woff2');
-    font-weight: normal;
-    font-style: italic;
-}
-
 body{
     margin: 0;
     height: 100vh;
